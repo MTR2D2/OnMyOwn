@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,14 +28,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-cC-zhe"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7wc-pr-4l0"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bXW-cC-zhe" firstAttribute="top" secondItem="5r2-Ej-igO" secondAttribute="bottom" constant="37.5" id="B9V-9b-Wuf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7wc-pr-4l0" secondAttribute="bottom" constant="183" id="Gqk-6A-mbN"/>
+                            <constraint firstItem="bXW-cC-zhe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="114" id="MA4-k7-vZF"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PlI-hL-yop"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d6C-jR-7wV"/>
+                            <constraint firstItem="7wc-pr-4l0" firstAttribute="top" secondItem="bXW-cC-zhe" secondAttribute="bottom" constant="29" id="eJf-Td-9pE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7wc-pr-4l0" secondAttribute="trailing" constant="125" id="iuB-2m-I9F"/>
+                            <constraint firstItem="7wc-pr-4l0" firstAttribute="top" secondItem="bXW-cC-zhe" secondAttribute="bottom" constant="29" id="nAf-Kc-aA5"/>
+                            <constraint firstItem="7wc-pr-4l0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="nM1-Pr-Apt"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="97:667" id="nQu-DY-o09"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXW-cC-zhe" secondAttribute="trailing" constant="115" id="xrZ-Od-Vkl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mrStepper" destination="7wc-pr-4l0" id="gMr-dV-cPk"/>
+                        <outlet property="thisHereSlider" destination="bXW-cC-zhe" id="yMk-RU-utZ"/>
+                        <outlet property="thisTextField" destination="5r2-Ej-igO" id="kaj-7L-xeQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

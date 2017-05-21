@@ -10,17 +10,18 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    
     var currentCount = Int(arc4random()%100)
     
-    @IBOutlet weak var thisTextField:UITextField!
-    @IBOutlet weak var thisHereSlider:UISlider!
-    @IBOutlet weak var mrStepper:UIStepper!
+    @IBOutlet weak var firstTextField:UITextField!
+    @IBOutlet weak var firstSlider:UISlider!
+    @IBOutlet weak var firstStepper:UIStepper!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        updateViewsWithCurrentCount()
     }
 
     override func didReceiveMemoryWarning()
@@ -29,6 +30,13 @@ class ViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
 
+    func updateViewsWithCurrentCount()
+    {
+        firstTextField.text = "\(currentCount)"
+        firstSlider.value = Float(currentCount)
+        firstStepper.value = Double(currentCount)
+    }
+    
 
 }
 
