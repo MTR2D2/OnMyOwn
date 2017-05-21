@@ -13,7 +13,6 @@
 		4C0E990D1EC9830000CAE06C /* Compilation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E990B1EC9830000CAE06C /* Compilation.xcdatamodeld */; };
 		4C0E990F1EC9830000CAE06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E990E1EC9830000CAE06C /* Assets.xcassets */; };
 		4C0E99121EC9830000CAE06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E99101EC9830000CAE06C /* LaunchScreen.storyboard */; };
-		4C9B8EF41ED210360097495E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E99131EC9830000CAE06C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Simplicity, Inc.";
 				TargetAttributes = {
 					4C0E99001EC982FF00CAE06C = {
@@ -128,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C9B8EF41ED210360097495E /* Info.plist in Resources */,
 				4C0E99121EC9830000CAE06C /* LaunchScreen.storyboard in Resources */,
 				4C0E990F1EC9830000CAE06C /* Assets.xcassets in Resources */,
 				4C0E990A1EC9830000CAE06C /* Main.storyboard in Resources */,
@@ -188,6 +186,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -237,6 +236,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
