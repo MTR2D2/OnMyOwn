@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SliderViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Compilation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SliderViewController" id="BYZ-38-t0r" customClass="SliderViewController" customModule="Compilation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,41 +20,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-Ej-igO">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-cC-zhe">
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hug-UX-TF2"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7wc-pr-4l0">
+                                <connections>
+                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ut-i2-q9t"/>
+                                </connections>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-Ej-igO">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4mu-YS-llS"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-cC-zhe"/>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7wc-pr-4l0"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6Rt-2t-Hcw">
+                                <connections>
+                                    <action selector="secondSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YLk-3P-Krd"/>
+                                </connections>
+                            </slider>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80812326457765371" green="0.80812326457765371" blue="0.80812326457765371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Rt-2t-Hcw" secondAttribute="trailing" constant="10" id="2zB-dq-syt"/>
+                            <constraint firstItem="6Rt-2t-Hcw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="135" id="7hL-OZ-ga0"/>
                             <constraint firstItem="bXW-cC-zhe" firstAttribute="top" secondItem="5r2-Ej-igO" secondAttribute="bottom" constant="37.5" id="B9V-9b-Wuf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7wc-pr-4l0" secondAttribute="bottom" constant="183" id="Gqk-6A-mbN"/>
                             <constraint firstItem="bXW-cC-zhe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="114" id="MA4-k7-vZF"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PlI-hL-yop"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d6C-jR-7wV"/>
                             <constraint firstItem="7wc-pr-4l0" firstAttribute="top" secondItem="bXW-cC-zhe" secondAttribute="bottom" constant="29" id="eJf-Td-9pE"/>
+                            <constraint firstItem="5r2-Ej-igO" firstAttribute="top" secondItem="6Rt-2t-Hcw" secondAttribute="bottom" constant="123" id="elp-Fk-9Br"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7wc-pr-4l0" secondAttribute="trailing" constant="125" id="iuB-2m-I9F"/>
                             <constraint firstItem="7wc-pr-4l0" firstAttribute="top" secondItem="bXW-cC-zhe" secondAttribute="bottom" constant="29" id="nAf-Kc-aA5"/>
                             <constraint firstItem="7wc-pr-4l0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="nM1-Pr-Apt"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="97:667" id="nQu-DY-o09"/>
+                            <constraint firstItem="6Rt-2t-Hcw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="uqh-gG-9yi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bXW-cC-zhe" secondAttribute="trailing" constant="115" id="xrZ-Od-Vkl"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ufk-P1-2kl" appends="YES" id="kXQ-gI-P6n"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="yMu-zl-5Aq"/>
                     <connections>
-                        <outlet property="mrStepper" destination="7wc-pr-4l0" id="gMr-dV-cPk"/>
-                        <outlet property="thisHereSlider" destination="bXW-cC-zhe" id="yMk-RU-utZ"/>
-                        <outlet property="thisTextField" destination="5r2-Ej-igO" id="kaj-7L-xeQ"/>
+                        <outlet property="firstSlider" destination="bXW-cC-zhe" id="mf4-do-8pK"/>
+                        <outlet property="firstStepper" destination="7wc-pr-4l0" id="r83-VU-trZ"/>
+                        <outlet property="firstTextField" destination="5r2-Ej-igO" id="zkX-JR-Uhx"/>
+                        <outlet property="secondSlider" destination="6Rt-2t-Hcw" id="hCw-Xk-mQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ufk-P1-2kl">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="fbX-sV-CBN"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="2696.8000000000002" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
 </document>
