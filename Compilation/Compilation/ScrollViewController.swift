@@ -13,6 +13,7 @@ class ScrollViewController: UIViewController
     @IBOutlet weak var scrolllllll:UIScrollView!
     @IBOutlet weak var imageee:UIImageView!
     @IBOutlet weak var changingButton:UIButton!
+    @IBOutlet weak var catsButton:UIButton!
 
     override func viewDidLoad()
     {
@@ -21,6 +22,9 @@ class ScrollViewController: UIViewController
         view.addSubview(scrolllllll)
         
         imageee.image = UIImage(named: "Cat.png")
+        
+        catsButton.isEnabled = false
+        catsButton.isHidden = true
     }
 
     override func didReceiveMemoryWarning()
@@ -38,10 +42,20 @@ class ScrollViewController: UIViewController
     
     @IBAction func whenChangingButtonTapped(_ sender:UIButton)
     {
-            imageee.image = UIImage(named: "Dogs.png")
-            changingButton.setTitle("Dogs", for: .normal)
+        imageee.image = UIImage(named: "Dogs.png")
+        changingButton.setTitle("Or...", for: .normal)
+        
+        catsButton.isEnabled = true
+        catsButton.isHidden = false
     }
     
+    @IBAction func whenCatsButtonTapped(_ sender:UIButton)
+    {
+        imageee.image = UIImage(named: "Cat.png")
+        changingButton.setTitle("Cat", for: .normal)
+        catsButton.isEnabled = false
+        catsButton.isHidden = true
+    }
 
     /*
     // MARK: - Navigation

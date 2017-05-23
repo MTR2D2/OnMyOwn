@@ -208,6 +208,15 @@
                                     <action selector="whenChangingButtonTapped:" destination="Zyz-x7-AWg" eventType="touchUpInside" id="jfK-mK-98b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIp-vx-qmx">
+                                <rect key="frame" x="151.5" y="373" width="72" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <state key="normal" title="Dogs"/>
+                                <connections>
+                                    <action selector="whenCatsButtonTapped:" destination="Zyz-x7-AWg" eventType="touchUpInside" id="6JJ-pa-UNL"/>
+                                    <action selector="whenChangingButtonTapped:" destination="Zyz-x7-AWg" eventType="touchUpInside" id="6J0-Kd-qCt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -221,9 +230,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="47G-ul-1wp" secondAttribute="trailing" constant="42" id="ZJk-3e-IYY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oU3-WN-2pr" secondAttribute="trailing" constant="52" id="cko-Do-QyG"/>
                             <constraint firstItem="47G-ul-1wp" firstAttribute="top" secondItem="4yx-cR-LaH" secondAttribute="bottom" constant="152" id="gdo-cH-lun"/>
+                            <constraint firstItem="cIp-vx-qmx" firstAttribute="top" secondItem="47G-ul-1wp" secondAttribute="bottom" constant="29" id="iDG-Kf-Ad2"/>
+                            <constraint firstItem="cIp-vx-qmx" firstAttribute="centerX" secondItem="1Wn-Hc-7JU" secondAttribute="centerX" id="oeQ-hN-fGU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="catsButton" destination="cIp-vx-qmx" id="jrn-mT-Kwf"/>
                         <outlet property="changingButton" destination="DAo-7X-alr" id="KRe-cx-V5c"/>
                         <outlet property="imageee" destination="47G-ul-1wp" id="IAE-TF-8bE"/>
                         <outlet property="scrolllllll" destination="oU3-WN-2pr" id="aHU-FO-0rx"/>
