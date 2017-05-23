@@ -15,6 +15,7 @@ class SliderViewController: UIViewController
     @IBOutlet weak var firstSlider:UISlider!
     @IBOutlet weak var firstStepper:UIStepper!
     @IBOutlet weak var secondSlider:UISlider!
+    @IBOutlet weak var moveForward:UIBarButtonItem!
     override func viewDidLoad()
     {
         super.viewDidLoad()

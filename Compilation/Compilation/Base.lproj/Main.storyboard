@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6wD-x0-Qqj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,16 +24,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-cC-zhe">
+                                <rect key="frame" x="128" y="396" width="118" height="31"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hug-UX-TF2"/>
                                 </connections>
                             </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7wc-pr-4l0">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7wc-pr-4l0">
+                                <rect key="frame" x="140" y="455" width="94" height="29"/>
                                 <connections>
                                     <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ut-i2-q9t"/>
                                 </connections>
                             </stepper>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-Ej-igO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-Ej-igO">
+                                <rect key="frame" x="139" y="308.5" width="97" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4mu-YS-llS"/>
                                 </constraints>
@@ -38,7 +44,8 @@
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6Rt-2t-Hcw">
+                            <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6Rt-2t-Hcw">
+                                <rect key="frame" x="24" y="199" width="327" height="31"/>
                                 <connections>
                                     <action selector="secondSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YLk-3P-Krd"/>
                                 </connections>
@@ -55,7 +62,6 @@
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PlI-hL-yop"/>
                             <constraint firstItem="5r2-Ej-igO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d6C-jR-7wV"/>
                             <constraint firstItem="7wc-pr-4l0" firstAttribute="top" secondItem="bXW-cC-zhe" secondAttribute="bottom" constant="29" id="eJf-Td-9pE"/>
-                            <constraint firstItem="5r2-Ej-igO" firstAttribute="top" secondItem="6Rt-2t-Hcw" secondAttribute="bottom" constant="123" id="elp-Fk-9Br"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7wc-pr-4l0" secondAttribute="trailing" constant="125" id="iuB-2m-I9F"/>
                             <constraint firstItem="7wc-pr-4l0" firstAttribute="top" secondItem="bXW-cC-zhe" secondAttribute="bottom" constant="29" id="nAf-Kc-aA5"/>
                             <constraint firstItem="7wc-pr-4l0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="nM1-Pr-Apt"/>
@@ -67,11 +73,18 @@
                             <outletCollection property="gestureRecognizers" destination="Ufk-P1-2kl" appends="YES" id="kXQ-gI-P6n"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="yMu-zl-5Aq"/>
+                    <navigationItem key="navigationItem" id="yMu-zl-5Aq">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="fastForward" id="pPf-hx-w9M">
+                            <connections>
+                                <segue destination="vUl-hx-8rp" kind="show" id="JeO-0x-uCZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstSlider" destination="bXW-cC-zhe" id="mf4-do-8pK"/>
                         <outlet property="firstStepper" destination="7wc-pr-4l0" id="r83-VU-trZ"/>
                         <outlet property="firstTextField" destination="5r2-Ej-igO" id="zkX-JR-Uhx"/>
+                        <outlet property="moveForward" destination="pPf-hx-w9M" id="eiy-pe-vZR"/>
                         <outlet property="secondSlider" destination="6Rt-2t-Hcw" id="hCw-Xk-mQE"/>
                     </connections>
                 </viewController>
@@ -81,6 +94,97 @@
                         <action selector="viewTapped:" destination="BYZ-38-t0r" id="fbX-sV-CBN"/>
                     </connections>
                 </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3636" y="117.39130434782609"/>
+        </scene>
+        <!--SecondSliderViewController-->
+        <scene sceneID="Y2c-Fz-Hbm">
+            <objects>
+                <viewController title="SecondSliderViewController" id="vUl-hx-8rp" customClass="SecondSliderViewController" customModule="Compilation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jwy-8j-z2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="hLA-Tj-WtA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vbZ-yq-xOs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WCd-Ld-g3F">
+                                <rect key="frame" x="140.5" y="305" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperMoved:" destination="vUl-hx-8rp" eventType="valueChanged" id="h6L-QS-vob"/>
+                                </connections>
+                            </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LMR-gD-68u">
+                                <rect key="frame" x="128.5" y="378" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="wYP-bf-zHI"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="vUl-hx-8rp" eventType="valueChanged" id="0VG-PK-1xP"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97c-hN-Oie">
+                                <rect key="frame" x="156.5" y="105" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLv-AZ-b3v">
+                                <rect key="frame" x="177.5" y="178" width="21" height="36"/>
+                                <color key="textColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80812326459999995" green="0.80812326459999995" blue="0.80812326459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="lLv-AZ-b3v" secondAttribute="centerX" id="33g-gc-89k"/>
+                            <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="vbZ-yq-xOs" secondAttribute="centerX" id="4TG-qP-z71"/>
+                            <constraint firstItem="hLA-Tj-WtA" firstAttribute="top" secondItem="LMR-gD-68u" secondAttribute="bottom" constant="259" id="IPy-03-awM"/>
+                            <constraint firstItem="97c-hN-Oie" firstAttribute="top" secondItem="Jwy-8j-z2I" secondAttribute="bottom" constant="41" id="a9a-Vy-62x"/>
+                            <constraint firstItem="WCd-Ld-g3F" firstAttribute="top" secondItem="lLv-AZ-b3v" secondAttribute="bottom" constant="91" id="gtB-GH-B7J"/>
+                            <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="WCd-Ld-g3F" secondAttribute="centerX" id="mI1-8h-hw6"/>
+                            <constraint firstItem="LMR-gD-68u" firstAttribute="top" secondItem="WCd-Ld-g3F" secondAttribute="bottom" constant="44" id="mY8-Pe-WxM"/>
+                            <constraint firstItem="lLv-AZ-b3v" firstAttribute="top" secondItem="97c-hN-Oie" secondAttribute="bottom" constant="52" id="raC-3X-cxr"/>
+                            <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="97c-hN-Oie" secondAttribute="centerX" id="wWH-t1-KV1"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Zwj-2V-hUI" appends="YES" id="pqI-zF-EeS"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mrLabel" destination="97c-hN-Oie" id="SoZ-vm-0WV"/>
+                        <outlet property="sliderR" destination="LMR-gD-68u" id="1wt-sf-xWx"/>
+                        <outlet property="stepperR" destination="WCd-Ld-g3F" id="K7V-Fq-Km6"/>
+                        <outlet property="textField" destination="lLv-AZ-b3v" id="wjW-yD-elo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raV-i7-vL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Zwj-2V-hUI">
+                    <connections>
+                        <action selector="viewTapped:" destination="vUl-hx-8rp" id="pzS-Ju-jL5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4498" y="117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q9O-Cv-FoT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6wD-x0-Qqj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kwF-ZT-u2a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oJA-56-tqY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpG-i0-DpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2696.8000000000002" y="117.39130434782609"/>
         </scene>

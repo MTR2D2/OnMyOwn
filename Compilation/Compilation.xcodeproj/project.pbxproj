@@ -13,6 +13,7 @@
 		4C0E990D1EC9830000CAE06C /* Compilation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E990B1EC9830000CAE06C /* Compilation.xcdatamodeld */; };
 		4C0E990F1EC9830000CAE06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E990E1EC9830000CAE06C /* Assets.xcassets */; };
 		4C0E99121EC9830000CAE06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E99101EC9830000CAE06C /* LaunchScreen.storyboard */; };
+		4C8951EA1ED29AFA0062D1E9 /* SecondSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8951E91ED29AFA0062D1E9 /* SecondSliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4C0E990E1EC9830000CAE06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0E99111EC9830000CAE06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0E99131EC9830000CAE06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8951E91ED29AFA0062D1E9 /* SecondSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				4C0E99041EC9830000CAE06C /* AppDelegate.swift */,
 				4C0E99061EC9830000CAE06C /* SliderViewController.swift */,
+				4C8951E91ED29AFA0062D1E9 /* SecondSliderViewController.swift */,
 				4C0E99081EC9830000CAE06C /* Main.storyboard */,
 				4C0E990E1EC9830000CAE06C /* Assets.xcassets */,
 				4C0E99101EC9830000CAE06C /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				4C0E990D1EC9830000CAE06C /* Compilation.xcdatamodeld in Sources */,
 				4C0E99071EC9830000CAE06C /* SliderViewController.swift in Sources */,
+				4C8951EA1ED29AFA0062D1E9 /* SecondSliderViewController.swift in Sources */,
 				4C0E99051EC9830000CAE06C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
