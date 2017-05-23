@@ -53,6 +53,14 @@ class SecondSliderViewController:UIViewController
     {
         currentCount = Int(sender.value)
         updateViewsWithCurrentCount()
+        if Int(sender.value) >= 50
+        {
+            mrLabel.text = "panties"
+        }
+        else if Int(sender.value) <= 50
+        {
+            mrLabel.text = "Number"
+        }
     }
     @IBAction func stepperMoved(_ sender:UIStepper)
     {

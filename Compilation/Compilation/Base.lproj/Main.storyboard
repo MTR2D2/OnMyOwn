@@ -214,7 +214,6 @@
                                 <state key="normal" title="Dogs"/>
                                 <connections>
                                     <action selector="whenCatsButtonTapped:" destination="Zyz-x7-AWg" eventType="touchUpInside" id="6JJ-pa-UNL"/>
-                                    <action selector="whenChangingButtonTapped:" destination="Zyz-x7-AWg" eventType="touchUpInside" id="6J0-Kd-qCt"/>
                                 </connections>
                             </button>
                         </subviews>

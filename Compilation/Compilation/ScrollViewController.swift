@@ -53,6 +53,7 @@ class ScrollViewController: UIViewController
     {
         imageee.image = UIImage(named: "Cat.png")
         changingButton.setTitle("Cat", for: .normal)
+        
         catsButton.isEnabled = false
         catsButton.isHidden = true
     }
