@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="3636" y="117.39130434782609"/>
         </scene>
-        <!--SecondSliderViewController-->
+        <!--Second Slider View Controller-->
         <scene sceneID="Y2c-Fz-Hbm">
             <objects>
-                <viewController title="SecondSliderViewController" id="vUl-hx-8rp" customClass="SecondSliderViewController" customModule="Compilation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vUl-hx-8rp" customClass="SecondSliderViewController" customModule="Compilation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jwy-8j-z2I"/>
                         <viewControllerLayoutGuide type="bottom" id="hLA-Tj-WtA"/>
@@ -136,6 +136,16 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXi-bi-oZU">
+                                <rect key="frame" x="153" y="509" width="70" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="30"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleShadowColor" red="0.89255877877968648" green="0.72644357626024592" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zyz-x7-AWg" kind="show" id="dMd-QP-rWg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80812326459999995" green="0.80812326459999995" blue="0.80812326459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -143,6 +153,8 @@
                             <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="lLv-AZ-b3v" secondAttribute="centerX" id="33g-gc-89k"/>
                             <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="vbZ-yq-xOs" secondAttribute="centerX" id="4TG-qP-z71"/>
                             <constraint firstItem="hLA-Tj-WtA" firstAttribute="top" secondItem="LMR-gD-68u" secondAttribute="bottom" constant="259" id="IPy-03-awM"/>
+                            <constraint firstItem="wXi-bi-oZU" firstAttribute="top" secondItem="LMR-gD-68u" secondAttribute="bottom" constant="101" id="NWM-4Y-qNx"/>
+                            <constraint firstItem="wXi-bi-oZU" firstAttribute="centerX" secondItem="vbZ-yq-xOs" secondAttribute="centerX" id="QvA-cC-dRS"/>
                             <constraint firstItem="97c-hN-Oie" firstAttribute="top" secondItem="Jwy-8j-z2I" secondAttribute="bottom" constant="41" id="a9a-Vy-62x"/>
                             <constraint firstItem="WCd-Ld-g3F" firstAttribute="top" secondItem="lLv-AZ-b3v" secondAttribute="bottom" constant="91" id="gtB-GH-B7J"/>
                             <constraint firstItem="LMR-gD-68u" firstAttribute="centerX" secondItem="WCd-Ld-g3F" secondAttribute="centerX" id="mI1-8h-hw6"/>
@@ -169,6 +181,57 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4498" y="117"/>
+        </scene>
+        <!--Scroll View Controller-->
+        <scene sceneID="MRw-gk-Egp">
+            <objects>
+                <viewController id="Zyz-x7-AWg" customClass="ScrollViewController" customModule="Compilation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4yx-cR-LaH"/>
+                        <viewControllerLayoutGuide type="bottom" id="dqb-L2-e0H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Wn-Hc-7JU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oU3-WN-2pr">
+                                <rect key="frame" x="67" y="454" width="240" height="174"/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47G-ul-1wp">
+                                <rect key="frame" x="77" y="216" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAo-7X-alr">
+                                <rect key="frame" x="162.5" y="113" width="49" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <state key="normal" title="Cat"/>
+                                <connections>
+                                    <action selector="whenChangingButtonTapped:" destination="Zyz-x7-AWg" eventType="touchUpInside" id="jfK-mK-98b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dqb-L2-e0H" firstAttribute="top" secondItem="oU3-WN-2pr" secondAttribute="bottom" constant="39" id="4ET-yo-a3T"/>
+                            <constraint firstItem="oU3-WN-2pr" firstAttribute="leading" secondItem="1Wn-Hc-7JU" secondAttribute="leadingMargin" constant="51" id="8lH-l4-0wj"/>
+                            <constraint firstItem="47G-ul-1wp" firstAttribute="top" secondItem="DAo-7X-alr" secondAttribute="bottom" constant="57" id="8wo-Qn-SaS"/>
+                            <constraint firstItem="DAo-7X-alr" firstAttribute="centerX" secondItem="1Wn-Hc-7JU" secondAttribute="centerX" id="Rnc-YD-gVk"/>
+                            <constraint firstItem="oU3-WN-2pr" firstAttribute="top" secondItem="47G-ul-1wp" secondAttribute="bottom" constant="110" id="SXX-Zq-3VL"/>
+                            <constraint firstItem="47G-ul-1wp" firstAttribute="leading" secondItem="1Wn-Hc-7JU" secondAttribute="leadingMargin" constant="61" id="UhA-py-DqR"/>
+                            <constraint firstItem="oU3-WN-2pr" firstAttribute="top" secondItem="4yx-cR-LaH" secondAttribute="bottom" constant="390" id="Xrc-VN-jgG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="47G-ul-1wp" secondAttribute="trailing" constant="42" id="ZJk-3e-IYY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oU3-WN-2pr" secondAttribute="trailing" constant="52" id="cko-Do-QyG"/>
+                            <constraint firstItem="47G-ul-1wp" firstAttribute="top" secondItem="4yx-cR-LaH" secondAttribute="bottom" constant="152" id="gdo-cH-lun"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changingButton" destination="DAo-7X-alr" id="KRe-cx-V5c"/>
+                        <outlet property="imageee" destination="47G-ul-1wp" id="IAE-TF-8bE"/>
+                        <outlet property="scrolllllll" destination="oU3-WN-2pr" id="aHU-FO-0rx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1S-78-rNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5364" y="116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q9O-Cv-FoT">

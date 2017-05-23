@@ -14,6 +14,9 @@
 		4C0E990F1EC9830000CAE06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E990E1EC9830000CAE06C /* Assets.xcassets */; };
 		4C0E99121EC9830000CAE06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E99101EC9830000CAE06C /* LaunchScreen.storyboard */; };
 		4C8951EA1ED29AFA0062D1E9 /* SecondSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8951E91ED29AFA0062D1E9 /* SecondSliderViewController.swift */; };
+		4C8951EC1ED3EF190062D1E9 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8951EB1ED3EF190062D1E9 /* ScrollViewController.swift */; };
+		4C8951F31ED3F5260062D1E9 /* Cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8951F21ED3F5260062D1E9 /* Cat.png */; };
+		4C8951F51ED3F8240062D1E9 /* Dogs.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8951F41ED3F8240062D1E9 /* Dogs.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4C0E99111EC9830000CAE06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0E99131EC9830000CAE06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8951E91ED29AFA0062D1E9 /* SecondSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSliderViewController.swift; sourceTree = "<group>"; };
+		4C8951EB1ED3EF190062D1E9 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		4C8951F21ED3F5260062D1E9 /* Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cat.png; sourceTree = "<group>"; };
+		4C8951F41ED3F8240062D1E9 /* Dogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dogs.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		4C0E99031EC9830000CAE06C /* Compilation */ = {
 			isa = PBXGroup;
 			children = (
+				4C8951F01ED3F2470062D1E9 /* Swift Files */,
+				4C0E99081EC9830000CAE06C /* Main.storyboard */,
+				4C8951EF1ED3F2360062D1E9 /* Images */,
+				4C8951F11ED3F2590062D1E9 /* Misc */,
+			);
+			path = Compilation;
+			sourceTree = "<group>";
+		};
+		4C8951EF1ED3F2360062D1E9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4C8951F21ED3F5260062D1E9 /* Cat.png */,
+				4C8951F41ED3F8240062D1E9 /* Dogs.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4C8951F01ED3F2470062D1E9 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
 				4C0E99041EC9830000CAE06C /* AppDelegate.swift */,
 				4C0E99061EC9830000CAE06C /* SliderViewController.swift */,
 				4C8951E91ED29AFA0062D1E9 /* SecondSliderViewController.swift */,
-				4C0E99081EC9830000CAE06C /* Main.storyboard */,
+				4C8951EB1ED3EF190062D1E9 /* ScrollViewController.swift */,
+			);
+			name = "Swift Files";
+			sourceTree = "<group>";
+		};
+		4C8951F11ED3F2590062D1E9 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
 				4C0E990E1EC9830000CAE06C /* Assets.xcassets */,
 				4C0E99101EC9830000CAE06C /* LaunchScreen.storyboard */,
 				4C0E99131EC9830000CAE06C /* Info.plist */,
 				4C0E990B1EC9830000CAE06C /* Compilation.xcdatamodeld */,
 			);
-			path = Compilation;
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +165,8 @@
 			files = (
 				4C0E99121EC9830000CAE06C /* LaunchScreen.storyboard in Resources */,
 				4C0E990F1EC9830000CAE06C /* Assets.xcassets in Resources */,
+				4C8951F51ED3F8240062D1E9 /* Dogs.png in Resources */,
+				4C8951F31ED3F5260062D1E9 /* Cat.png in Resources */,
 				4C0E990A1EC9830000CAE06C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +180,7 @@
 			files = (
 				4C0E990D1EC9830000CAE06C /* Compilation.xcdatamodeld in Sources */,
 				4C0E99071EC9830000CAE06C /* SliderViewController.swift in Sources */,
+				4C8951EC1ED3EF190062D1E9 /* ScrollViewController.swift in Sources */,
 				4C8951EA1ED29AFA0062D1E9 /* SecondSliderViewController.swift in Sources */,
 				4C0E99051EC9830000CAE06C /* AppDelegate.swift in Sources */,
 			);
